@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        .red{
+            background-color: red;
+        }
+        #green{
+            background-color: green;
+        }
+        /* descended para  */
+        div p{
+            background-color: black;
+            color: white;
+        }
+        /* direct  */
+        div>p{
+            background: blue;
+            color: white;
+        }
+        /* universal selector */
+        *{
+            margin: 0;
+
+        }
+        a:visited{
+            color: yellow;
+            background-color: red;
+        }
+        a:hover{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">
+        I am div
+        <span>
+            <p>i am para decsended</p>
+        </span>
+    </div>
+    <div id="green">
+        i am another div
+        <p>i am direct para</p>
+    </div>  
+    <div class="selector">
+        <a href="https://www.google.com">Go to google</a>
+        <a href="https://www.facebook.com">Go to facebook</a>
+    </div>
+</body>
+</html>
